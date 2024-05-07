@@ -11,6 +11,7 @@ ressource_validator = FileExtensionValidator(['rar', 'zip'])
 class Promo(models.Model):
     nom = models.CharField(max_length=20)
     annee = models.CharField(max_length=10,default='2023-2024')
+    specialité = models.CharField(max_length=20)
     def __str__(self):
         return self.nom
     
